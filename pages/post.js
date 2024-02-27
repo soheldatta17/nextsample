@@ -45,7 +45,7 @@ const Button = () => {
                 catFacts.map((fact, index) => (
                   <div className="card" key={index}>
                     <a href={`/blog/${fact[1]}`} target="_blank">
-                      <h3>How to learn JavaScript in 2022?</h3>
+                      <h3>CAT FACTS</h3>
                       <h4>${index + 1}</h4>
                       <p>{fact[0]}</p>
 
