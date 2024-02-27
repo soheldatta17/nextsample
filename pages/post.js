@@ -45,15 +45,15 @@ const Button = () => {
                 catFacts.map((fact, index) => (
                   <div className="card" key={index}>
                     <a href={`/blog/${fact[1]}`} target="_blank">
-                      <h3>CAT FACTS</h3>
-                      <h4>${index + 1}</h4>
+                      <h3>CAT FACTS ( ID {index + 1} )</h3>
+                      <br></br>
                       <p>{fact[0]}</p>
 
                     </a>
                   </div>
                 ))
               ) : (
-                <p>Loading...</p>
+                <h1>Loading...</h1>
               )}
             </div>
           </div>

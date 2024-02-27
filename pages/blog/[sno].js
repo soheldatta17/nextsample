@@ -4,7 +4,7 @@ const Post = () => {
   const router = useRouter()
   const { sno } = router.query
 
-  return <p>Post: {sno}</p>
+  return <h1>Post: {sno}</h1>
 }
 
 export default Post
