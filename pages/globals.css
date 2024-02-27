@@ -53,9 +53,22 @@ li {
   transition: transform 0.3s ease-in-out;
   background-color: white;
 }
-
+.card1 {
+  width: 100%;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: white;
+}
 .card:hover {
   transform: scale(1.05);
+}
+.card1:hover
+{
+  transform: scale(1.03);
 }
 
 h3 {
@@ -75,4 +88,24 @@ p {
 *
 {
   font-family: cursive;
+}
+.catimage
+{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.button
+{
+  font-weight: 700;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: azure;
+}
+.button:hover
+{
+  opacity: 0.7;
+  transform: scale(1.05);
 }

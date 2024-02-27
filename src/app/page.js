@@ -10,15 +10,15 @@ const Button = () => {
     <>
       <main>
       <Image
-            src="/next.jpg"
-            width={720}
-            height={320}
+            src="/cat.gif"
+            width={450}
+            height={450}
             alt="Picture of the author"
             className="Homeimage"
           />
         <div className="main">
           
-          <Link href="/about">
+          <Link href="/post">
             <h1 className="heading">Get Started</h1>
           </Link>
         </div>
