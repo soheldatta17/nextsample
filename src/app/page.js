@@ -18,7 +18,7 @@ const Button = () => {
           />
         <div className="main">
           
-          <Link href="/post">
+          <Link href="/about">
             <h1 className="heading">Get Started</h1>
           </Link>
         </div>
