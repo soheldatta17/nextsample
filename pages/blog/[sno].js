@@ -10,7 +10,7 @@ const Post = () => {
   if (sno != undefined) {
     parts = sno.split('&')
   }
-
+  
   return (
     <>
       <h1 className="heading">FACT ID : {parts[0]}</h1>
