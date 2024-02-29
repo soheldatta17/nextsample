@@ -17,7 +17,7 @@ const Bar = () => {
                                 <Link href="/about">About</Link>
                             </li>
                             <li>
-                                <Link href="/blogs">Blog</Link>
+                                <Link href="/blogs">Fact</Link>
                             </li>
                             <li>
                                 <Link href="/contact">Contact</Link>

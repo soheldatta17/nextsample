@@ -53,6 +53,7 @@ li {
   transition: transform 0.3s ease-in-out;
   background-color: white;
 }
+
 .card1 {
   width: 100%;
   margin: 10px;
@@ -63,19 +64,20 @@ li {
   transition: transform 0.3s ease-in-out;
   background-color: white;
 }
+
 .card:hover {
   transform: scale(1.05);
 }
-.card1:hover
-{
+
+.card1:hover {
   transform: scale(1.03);
 }
 
 h3 {
   color: #333;
 }
-.heading
-{
+
+.heading {
   font-weight: 900;
   font-size: 30px;
   margin-bottom: 20px;
@@ -85,27 +87,47 @@ h3 {
 p {
   color: #666;
 }
-*
-{
+
+* {
   font-family: cursive;
 }
-.catimage
-{
+
+.catimage {
   justify-content: center;
   display: flex;
   align-items: center;
   text-align: center;
 }
-.button
-{
+
+.button {
   font-weight: 700;
   border: 1px solid black;
   padding: 15px;
   border-radius: 10px;
   background-color: azure;
 }
-.button:hover
-{
+
+.button:hover {
   opacity: 0.7;
   transform: scale(1.05);
+}
+
+/* Media query for smaller screens (phones and tablets) */
+@media screen and (max-width: 768px) {
+  .card,
+  .card1 {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  li {
+    margin-right: 10px;
+  }
+
+  .heading {
+    font-size: 24px; /* Adjust heading font size */
+  }
+
+  .button {
+    padding: 10px; /* Adjust button padding */
+  }
 }

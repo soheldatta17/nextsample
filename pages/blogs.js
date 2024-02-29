@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
+import Image from 'next/image'
+
 const Button = () => {
   const numberOfCards = 20;
   const [catFacts, setCatFacts] = useState([]);
@@ -30,7 +32,18 @@ const Button = () => {
       <div className="main">
         
         <div className="blogs">
-          <h1 className="heading">All Blogs</h1>
+          <h1 className="heading">All Facts</h1>
+          <br></br>
+          <div className="catimage">
+            <Image
+              src="/cat.gif"
+              width={250}
+              height={250}
+              alt="Picture of the author"
+              className="Homeimage"
+            />
+          </div>
+          <br></br><br></br>
           <div className="blogItem">
             {catFacts.length > 0 ? (
               catFacts.map((fact, index) => (
