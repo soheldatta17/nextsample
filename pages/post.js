@@ -35,7 +35,7 @@ const Button = () => {
             {catFacts.length > 0 ? (
               catFacts.map((fact, index) => (
                 <div className="card" key={index}>
-                  <Link href={`/blog/${fact[1]}&${fact[0]}`}>
+                  <Link href={`/blog/hello`}>
                     
                       <h3>CAT FACTS ( ID {fact[1]} )</h3>
                       <br></br>
