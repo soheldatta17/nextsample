@@ -10,7 +10,7 @@ const Blog = () => {
 
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:3000/api/java');
+                const response = await fetch('http://localhost:3000/api/python');
                 const data = await response.json();
                 setBlog(data);
             } catch (error) {

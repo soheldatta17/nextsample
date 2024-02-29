@@ -26,7 +26,13 @@ const Post = () => {
   />
 </div>
 <br></br><br></br>
-<h6 style={{ fontWeight: '900', fontSize: '18px', backgroundColor: 'white', padding: '10px', border: '1px solid #ccc', borderRadius: '8px', width: '50%', margin: '0 auto' }}>{parts[1]}</h6>
+<div style={{ fontWeight: '900', fontSize: '18px', backgroundColor: 'white', padding: '10px', border: '1px solid #ccc', borderRadius: '15px', width: '50%', margin: '0 auto'}}>
+        <h3 style={{ color: 'blue' }}>Let's Know !</h3>
+        <br></br>
+        <p style={{ color: 'green' }}>{parts[1]}</p>
+        <br></br>
+        <p style={{ color: 'red' }}>Author: Sohel</p>
+      </div>
 
 <br></br><br></br>
       <Link href="/blogs"><button className="button">GO BACK</button></Link>
