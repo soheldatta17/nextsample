@@ -36,6 +36,7 @@ const Post = () => {
 
 <br></br><br></br>
       <Link href="/blogs"><button className="button">GO BACK</button></Link>
+      <br/><br/>
     </>
   )
 }

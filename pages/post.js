@@ -9,25 +9,22 @@ const Button = () => {
   const [catFacts, setCatFacts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchCatFacts = async () => {
-      try {
+  const fetchCatFacts = async () => {
+    try {
         let allFacts = [];
-        for (let i = 0; i < numberOfCards; i++) {
-          const response = await fetch("https://catfact.ninja/fact");
-          const data = await response.json();
-          allFacts.push([data.fact, data.length]);
-        }
-
-        console.log(allFacts);
-        setCatFacts(allFacts);
-        setLoading(false); // Set loading to false when data is fetched
-      } catch (error) {
+        const response = await fetch("https://catfact.ninja/facts?limit=6&max_length=140");
+        const data = await response.json();
+        await console.log(data.data)
+        await setCatFacts([...catFacts, ...data.data]);
+        await setLoading(false); // Set loading to false when data is fetched
+    } catch (error) {
         console.error('Error fetching cat facts:', error);
         setLoading(false); // Set loading to false even if there's an error
-      }
-    };
+    }
+};
 
+
+  useEffect(() => {
     fetchCatFacts();
   }, []);  // Empty dependency array to run only once
 
@@ -56,13 +53,13 @@ const Button = () => {
             <div className="blogItem">
               {catFacts.length > 0 && catFacts.map((fact, index) => (
                 <div className="card" key={index}>
-                  <Link href={`/blog/${fact[1]}&${fact[0]}`}>
+                  <Link href={`/blog/${fact.length}&${fact.fact}`}>
                     <div>
                       <h3 style={{ display: 'inline', color: 'red', fontWeight: 'bold' }}>CAT FACTS </h3>
-                      <h3 style={{ display: 'inline', color: 'green', fontWeight: 'bold' }}>( ID {fact[1]} )</h3>
+                      <h3 style={{ display: 'inline', color: 'green', fontWeight: 'bold' }}>( ID {fact.length} )</h3>
                       <br />
                       <br />
-                      <p style={{ color: 'blue', fontWeight: 'bold', fontSize: '18px' }}>{fact[0]}</p>
+                      <p style={{ color: 'blue', fontWeight: 'bold', fontSize: '18px' }}>{fact.fact}</p>
                       <br/>
                     </div>
                   </Link>
