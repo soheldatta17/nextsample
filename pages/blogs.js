@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { BallTriangle } from 'react-loader-spinner';
 import Image from 'next/image';
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 
 const Button = () => {
@@ -85,6 +86,7 @@ const Button = () => {
           <br/>
           <button style={{display: (total>=40)?'none':''}} className="button" onClick={fetchCatFacts}>LOAD MORE</button>
           <br/>
+          
         </div>
 
       </main>
